@@ -82,6 +82,7 @@ product-base-discount
 
 
 ##GetFunctionId
+```shell
 query GetFunctionId {
   shopifyFunctions(first: 10) {
     nodes {
@@ -92,13 +93,15 @@ query GetFunctionId {
     }
   }
 }
+```
 
 ##CreateAutomaticDiscount Using GraphQL
+```shell
 mutation CreateAutomaticDiscount {
   discountAutomaticAppCreate(
     automaticAppDiscount: {
       title: "Product Trigger - 15% OFF"
-      functionId: "019c2c2e-380d-7678-bdb9-041f8a1ffd32"
+      functionId: "FUNCTION ID HERE WHICH GET WHEN RUN ABOVE GetFunctionId"
       startsAt: "2024-01-01T00:00:00Z"
       discountClasses: [ORDER]
       combinesWith: {
@@ -123,3 +126,4 @@ mutation CreateAutomaticDiscount {
     }
   }
 }
+```
