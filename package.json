@@ -1,5 +1,5 @@
 {
-  "name": "product-base-discount",
+  "name": "premium-app",
   "version": "1.0.0",
   "license": "UNLICENSED",
   "scripts": {
@@ -14,7 +14,7 @@
   "trustedDependencies": [
     "@shopify/plugin-cloudflare"
   ],
-  "author": "abhis",
+  "author": "MUZZ",
   "private": true,
   "workspaces": [
     "extensions/*"

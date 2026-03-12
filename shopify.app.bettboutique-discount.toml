@@ -1,12 +1,9 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "110802049ab6dba181ffc0f83f9bf55c"
-name = "premium-app"
+client_id = "ac8b7a731f657b318135556c60036d50"
+name = "bettboutique-discount"
 application_url = "https://shopify.dev/apps/default-app-home"
 embedded = true
-
-[build]
-automatically_update_urls_on_dev = true
 
 [webhooks]
 api_version = "2026-04"

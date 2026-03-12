@@ -2,9 +2,9 @@ api_version = "2026-01"
 
 [[extensions]]
 name = "t:name"
-handle = "product-tag-discount"
+handle = "discount-function-js"
 type = "function"
-uid = "6981fd8a-5d5d-d0e2-e8ec-55b7d1c7169490cd0d42"
+uid = "9a3ff08f-70a9-f7e8-f33e-b015c1449d54eb22baed"
 description = "t:description"
 
   [[extensions.targeting]]

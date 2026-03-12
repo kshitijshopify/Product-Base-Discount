@@ -1,0 +1,39 @@
+# Tags we check: discount:1 through discount:100 (order discount %)
+query CartInput {
+  cart {
+    lines {
+      id
+      cost {
+        subtotalAmount {
+          amount
+        }
+      }
+      merchandise {
+        ... on ProductVariant {
+          product {
+            id
+            hasTags(
+              tags: [
+                "discount:5"
+                "discount:10"
+                "discount:15"
+                "discount:20"
+                "discount:25"
+                "discount:30"
+                "discount:35"
+                "discount:40"
+                "discount:50"
+              ]
+            ) {
+              tag
+              hasTag
+            }
+          }
+        }
+      }
+    }
+  }
+  discount {
+    discountClasses
+  }
+}
